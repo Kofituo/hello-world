@@ -9,3 +9,9 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = { git = "https://github.com/rustwasm/wasm-bindgen.git" }
+
+[profile.dev]
+strip = true
+
+[profile.release]
+strip = true
